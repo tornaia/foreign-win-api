@@ -1,0 +1,2 @@
+rd /s /q src\main\java\com\github\tornaia\foreign\win\api\winnt\internal
+jextract --source -C --verbose -J-Xmx16G --filter winnt -d src\main\java --target-package com.github.tornaia.foreign.win.api.winnt.internal winnt.h

@@ -1,0 +1,2 @@
+rd /s /q src\main\java\com\github\tornaia\foreign\win\api\cfapi\internal
+jextract --source -C --verbose -J-Xmx16G --filter cfapi -d src\main\java --target-package com.github.tornaia.foreign.win.api.cfapi.internal cfapi.h

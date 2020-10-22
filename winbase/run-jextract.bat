@@ -1,0 +1,2 @@
+rd /s /q src\main\java\com\github\tornaia\foreign\win\api\winbase\internal
+jextract --source -C --verbose -J-Xmx16G --filter WinBase -d src\main\java --target-package com.github.tornaia.foreign.win.api.winbase.internal winbase.h
