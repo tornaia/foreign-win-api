@@ -44,6 +44,7 @@
 	
 	<modules>
 		<module>cfapi</module>
+		<module>searchapi</module>
 		<module>winbase</module>
 		<module>winnt</module>
 	</modules>

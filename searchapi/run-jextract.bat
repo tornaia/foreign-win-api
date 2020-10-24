@@ -1,0 +1,2 @@
+rd /s /q src\main\java\com\github\tornaia\foreign\win\api\searchapi\internal
+jextract --source -C --verbose -J-Xmx16G --filter SearchAPI -d src\main\java --target-package com.github.tornaia.foreign.win.api.searchapi.internal searchapi.h

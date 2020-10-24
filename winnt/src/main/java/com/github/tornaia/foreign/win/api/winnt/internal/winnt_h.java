@@ -43149,6 +43149,22 @@ public final class winnt_h extends winnt_h$3 {
         }
     }
 
+    @C("struct _TP_CALLBACK_INSTANCE")public static class TP_CALLBACK_INSTANCE {
+
+        /* package-private */ TP_CALLBACK_INSTANCE() {}
+        public static @C("struct _TP_CALLBACK_INSTANCE*") MemorySegment allocatePointer() {
+            return MemorySegment.allocateNative(C_POINTER);
+        }
+        public static @C("struct _TP_CALLBACK_INSTANCE*") MemorySegment allocatePointer(NativeScope scope) {
+            return scope.allocate(C_POINTER);
+        }
+    }
+
+    @C("struct _IMAGE_RUNTIME_FUNCTION_ENTRY")public static class RUNTIME_FUNCTION extends _IMAGE_RUNTIME_FUNCTION_ENTRY {
+
+        /* package-private */ RUNTIME_FUNCTION() {}
+    }
+
     @C("struct _TP_WORK")public static class TP_WORK {
 
         /* package-private */ TP_WORK() {}
@@ -43171,25 +43187,14 @@ public final class winnt_h extends winnt_h$3 {
         }
     }
 
-    @C("struct _TP_CALLBACK_INSTANCE")public static class TP_CALLBACK_INSTANCE {
-
-        /* package-private */ TP_CALLBACK_INSTANCE() {}
-        public static @C("struct _TP_CALLBACK_INSTANCE*") MemorySegment allocatePointer() {
-            return MemorySegment.allocateNative(C_POINTER);
-        }
-        public static @C("struct _TP_CALLBACK_INSTANCE*") MemorySegment allocatePointer(NativeScope scope) {
-            return scope.allocate(C_POINTER);
-        }
-    }
-
     @C("struct _PACKEDEVENTINFO")public static class PACKEDEVENTINFO extends _PACKEDEVENTINFO {
 
         /* package-private */ PACKEDEVENTINFO() {}
     }
 
-    @C("struct _IMAGE_RUNTIME_FUNCTION_ENTRY")public static class RUNTIME_FUNCTION extends _IMAGE_RUNTIME_FUNCTION_ENTRY {
+    @C("struct _EVENTSFORLOGFILE")public static class EVENTSFORLOGFILE extends _EVENTSFORLOGFILE {
 
-        /* package-private */ RUNTIME_FUNCTION() {}
+        /* package-private */ EVENTSFORLOGFILE() {}
     }
 
     @C("struct _TP_IO")public static class TP_IO {
@@ -43203,9 +43208,15 @@ public final class winnt_h extends winnt_h$3 {
         }
     }
 
-    @C("struct _EVENTSFORLOGFILE")public static class EVENTSFORLOGFILE extends _EVENTSFORLOGFILE {
+    @C("struct _TP_POOL")public static class TP_POOL {
 
-        /* package-private */ EVENTSFORLOGFILE() {}
+        /* package-private */ TP_POOL() {}
+        public static @C("struct _TP_POOL*") MemorySegment allocatePointer() {
+            return MemorySegment.allocateNative(C_POINTER);
+        }
+        public static @C("struct _TP_POOL*") MemorySegment allocatePointer(NativeScope scope) {
+            return scope.allocate(C_POINTER);
+        }
     }
 
     @C("struct _TP_CLEANUP_GROUP")public static class TP_CLEANUP_GROUP {
@@ -43226,17 +43237,6 @@ public final class winnt_h extends winnt_h$3 {
             return MemorySegment.allocateNative(C_POINTER);
         }
         public static @C("struct _TP_TIMER*") MemorySegment allocatePointer(NativeScope scope) {
-            return scope.allocate(C_POINTER);
-        }
-    }
-
-    @C("struct _TP_POOL")public static class TP_POOL {
-
-        /* package-private */ TP_POOL() {}
-        public static @C("struct _TP_POOL*") MemorySegment allocatePointer() {
-            return MemorySegment.allocateNative(C_POINTER);
-        }
-        public static @C("struct _TP_POOL*") MemorySegment allocatePointer(NativeScope scope) {
             return scope.allocate(C_POINTER);
         }
     }

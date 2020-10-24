@@ -1,6 +1,3 @@
-#ifndef CFAPI_EXT_H
-#define CFAPI_EXT_H
-
 #include <windows.h>
 #include <cfapi.h>
 
@@ -15,5 +12,3 @@ VOID ALLOCATE_CF_CALLBACK (
 		_In_ CONST CF_CALLBACK_PARAMETERS *CallbackParameters
 		)
 );
-
-#endif // CFAPI_EXT_H
