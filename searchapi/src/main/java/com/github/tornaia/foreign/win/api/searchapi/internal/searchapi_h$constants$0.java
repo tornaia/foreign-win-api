@@ -13,6 +13,10 @@ class searchapi_h$constants$0 {
     static final LibraryLookup[] LIBRARIES = RuntimeHelper.libraries(new String[] {
     });
 
+    static final int __REQUIRED_RPCNDR_H_VERSION__() { return (int)500L; }
+
+    static final int __REQUIRED_RPCSAL_H_VERSION__() { return (int)100L; }
+
     static final MemoryLayout __MIDL_itf_searchapi_0000_0000_v0_0_c_ifspec$LAYOUT_ = C_POINTER;
     static final jdk.incubator.foreign.MemoryLayout __MIDL_itf_searchapi_0000_0000_v0_0_c_ifspec$LAYOUT() { return __MIDL_itf_searchapi_0000_0000_v0_0_c_ifspec$LAYOUT_; }
 

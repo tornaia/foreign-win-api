@@ -10,6 +10,12 @@ import static jdk.incubator.foreign.CLinker.*;
 public final class searchapi_h  {
 
     /* package-private */ searchapi_h() {}
+    public static @C("int") int __REQUIRED_RPCNDR_H_VERSION__() {
+        return searchapi_h$constants$0.__REQUIRED_RPCNDR_H_VERSION__();
+    }
+    public static @C("int") int __REQUIRED_RPCSAL_H_VERSION__() {
+        return searchapi_h$constants$0.__REQUIRED_RPCSAL_H_VERSION__();
+    }
     public static @C("long") ValueLayout ITEMID = C_LONG;
     public static  MemoryLayout __MIDL_itf_searchapi_0000_0000_v0_0_c_ifspec$LAYOUT() {
         return searchapi_h$constants$0.__MIDL_itf_searchapi_0000_0000_v0_0_c_ifspec$LAYOUT();
